@@ -31,9 +31,13 @@ class CartController extends Controller
 
     public function add(Request $request, $id)
     {
-        $products = $request->session()->get("products");
-        $products[$id] = $request->input('quantity');
-        $request->session()->put('products', $products);
+        if (Auth::check()) {
+            $products = $request->session()->get("products");
+            $products[$id] = $request->input('quantity');
+            $request->session()->put('products', $products);
+        } else {
+            return redirect()->route('login')->with('error', 'Please log in to add products to the cart.');
+        }
 
         return redirect()->route('cart.index');
     }
