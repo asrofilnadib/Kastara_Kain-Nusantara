@@ -35,7 +35,6 @@ class Product extends Model
         foreach ($products as $product) {
             $total = $total + ($product->getPrice()*$productsInSession[$product->getId()]);
         }
-
         return $total;
     }
 

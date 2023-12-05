@@ -17,12 +17,11 @@ class ProductController extends Controller
         $viewData = [
           'title' =>'Products - Online Store',
           'subtitle' => 'List of products',
-          'products' => Product::all()
+          'products' => $product->paginate(2)
         ];
         return view('product.index')
           ->with("viewData", $viewData)
-          ->with('products', $product)
-          ->paginate(6);
+          ->with('products', $product);
     }
 
     public function show($id)
