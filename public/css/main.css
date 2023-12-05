@@ -488,6 +488,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   cursor: pointer;
 }
 
+.icon-header-auth {
+    position: relative;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
 
 /*---------------------------------------------*/
 .icon-header-noti::after {

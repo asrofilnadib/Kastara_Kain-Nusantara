@@ -21,12 +21,15 @@ class CartController extends Controller
             $total = Product::sumPricesByQuantities($productsInCart, $productsInSession);
         }
 
+        $cartCount = count($productsInCart);
+        $request->session()->put('cartCount', $cartCount);
+
         $viewData = [];
         $viewData["title"] = "Cart - Online Store";
         $viewData["subtitle"] =  "Shopping Cart";
         $viewData["total"] = $total;
         $viewData["products"] = $productsInCart;
-        return view('cart.index')->with("viewData", $viewData);
+        return view('cart.index', compact('cartCount'))->with("viewData", $viewData);
     }
 
     public function add(Request $request, $id)

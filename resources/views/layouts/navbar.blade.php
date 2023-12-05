@@ -10,43 +10,47 @@
           <img src="images/icons/logo-01.png" alt="IMG-LOGO">
         </a>
 
-        <!-- Menu desktop -->
-        <div class="menu-desktop">
-          <ul class="main-menu">
-            <li class="active-menu">
-              <a href="/">Home</a>
-            </li>
-
-            <li>
-              <a href="/products">Product</a>
-            </li>
-
-            <li>
-              <a href="/about">About</a>
-            </li>
-
-            <li>
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Icon header -->
-        <div class="wrap-icon-header flex-w flex-r-m">
-          <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
-            <i class="zmdi zmdi-search"></i>
+          <!-- Menu desktop -->
+          <div class="menu-desktop">
+              <ul class="main-menu">
+                  <li class="nav-item active-menu">
+                      <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/products">Product</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/about">About</a>
+                  </li>
+                  <li class="nav-item" >
+                      <a class='nav-link' href="/contact">Contact</a>
+                  </li>
+              </ul>
           </div>
 
-          <div href="/cart" class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
-            <i class="zmdi zmdi-shopping-cart"></i>
+          <div class="wrap-icon-header flex-w flex-r-m main-menu">
+              <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                  <i class="zmdi zmdi-search"></i>
+              </div>
+
+              <a href="/cart"
+                 class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                 data-notify="{{ session('cartCount', 0) }}">
+                  <i class="zmdi zmdi-shopping-cart"></i>
+              </a>
+
+              @guest
+                  <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11" href="{{ route('login') }}">Login</a>
+                  <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-2" href="{{ route('register') }}" role="button">Register</a>
+              @else
+                  <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-3" href="{{ route('myaccount.orders') }}">My Orders</a>
+                  <form id="logout" action="{{ route('logout') }}" method="POST">
+                      <a role="button" class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-1"
+                         onclick="document.getElementById('logout').submit();">Logout</a>
+                      @csrf
+                  </form>
+              @endguest
           </div>
-
-          <div class="vr bg-black mx-1 d-none d-lg-block"></div>
-
-          <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
-            <i class="zmdi zmdi-favorite-outline"></i>
-          </a>
-        </div>
       </nav>
     </div>
   </div>
