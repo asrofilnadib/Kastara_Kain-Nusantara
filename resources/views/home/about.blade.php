@@ -17,30 +17,27 @@
         <div class="col-md-7 col-lg-8">
           <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
             <h3 class="mtext-111 cl2 p-b-16">
-              Our Story
+              Tentang Kastara - Kain Nusantara
             </h3>
 
             <p class="stext-113 cl6 p-b-26">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat consequat enim, non auctor massa
-              ultrices non. Morbi sed odio massa. Quisque at vehicula tellus, sed tincidunt augue. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas varius egestas diam, eu
-              sodales metus scelerisque congue. Pellentesque habitant morbi tristique senectus et netus et malesuada
-              fames ac turpis egestas. Maecenas gravida justo eu arcu egestas convallis. Nullam eu erat bibendum, tempus
-              ipsum eget, dictum enim. Donec non neque ut enim dapibus tincidunt vitae nec augue. Suspendisse potenti.
-              Proin ut est diam. Donec condimentum euismod tortor, eget facilisis diam faucibus et. Morbi a tempor elit.
+            Kastara, sebuah platform E-Commerce eksklusif, hadir untuk memperkenalkan dan menghadirkan 
+            keindahan Kain Motif dari berbagai daerah yang tersebar di seluruh Nusantara. Merayakan keberagaman kain 
+            tradisional Indonesia, Kastara memberikan pengalaman belanja yang unik dan menarik bagi para penggemar 
+            tekstil dan seni dari seluruh penjuru tanah air.
             </p>
 
             <p class="stext-113 cl6 p-b-26">
-              Donec gravida lorem elit, quis condimentum ex semper sit amet. Fusce eget ligula magna. Aliquam aliquam
-              imperdiet sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida.
-              Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. Etiam
-              pellentesque, magna vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat arcu ut sem. Sed
-              rutrum, turpis ut commodo efficitur, quam velit convallis ipsum, et maximus enim ligula ac ligula.
+            Melalui Kastara, kami mengundang Anda untuk menjelajahi koleksi kain motif yang dipilih secara cermat, 
+            mencakup kekayaan budaya dari pulau-pulau dan daerah-daerah yang mempesona. Setiap kain yang kami 
+            tawarkan adalah karya seni yang menceritakan cerita khas setiap komunitas lokal, mengekspresikan 
+            warisan budaya, dan memperkuat identitas Indonesia yang beragam.
             </p>
 
             <p class="stext-113 cl6 p-b-26">
-              Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96
-              716 6879
+            Dengan tujuan mendukung industri kreatif lokal, Kastara menjembatani antara produsen kain tradisional, 
+            pengrajin, dan pecinta seni tekstil. Melalui transaksi di Kastara, Anda tidak hanya mendapatkan produk 
+            berkualitas tinggi, tetapi juga turut berkontribusi pada pelestarian kearifan lokal dan peningkatan kesejahteraan komunitas.
             </p>
           </div>
         </div>
@@ -57,30 +54,27 @@
       <div class="row">
         <div class="order-md-2 col-md-7 col-lg-8 p-b-30">
           <div class="p-t-7 p-l-85 p-l-15-lg p-l-0-md">
-            <h3 class="mtext-111 cl2 p-b-16">
-              Our Mission
-            </h3>
 
             <p class="stext-113 cl6 p-b-26">
-              Mauris non lacinia magna. Sed nec lobortis dolor. Vestibulum rhoncus dignissim risus, sed consectetur
-              erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam
-              maximus mauris sit amet odio convallis, in pharetra magna gravida. Praesent sed nunc fermentum mi molestie
-              tempor. Morbi vitae viverra odio. Pellentesque ac velit egestas, luctus arcu non, laoreet mauris. Sed in
-              ipsum tempor, consequat odio in, porttitor ante. Ut mauris ligula, volutpat in sodales in, porta non odio.
-              Pellentesque tempor urna vitae mi vestibulum, nec venenatis nulla lobortis. Proin at gravida ante. Mauris
-              auctor purus at lacus maximus euismod. Pellentesque vulputate massa ut nisl hendrerit, eget elementum
-              libero iaculis.
+            Setiap kain di Kastara tidak hanya sekadar produk, tetapi juga potongan keindahan yang dapat memperkaya gaya hidup Anda. 
+            Selain itu, kami menghadirkan informasi mendalam mengenai asal-usul dan makna dari setiap motif, sehingga setiap pembelian 
+            bukan hanya menjadi investasi fashion, tetapi juga perjalanan budaya yang tak terlupakan.
+            </p>
+
+            <p class="stext-113 cl6 p-b-26">
+            Mari bergabung dalam perjalanan kami untuk merayakan keindahan kain motif Nusantara di Kastara. 
+            Temukan dan pamerkan kekhasan budaya Indonesia melalui kain-kain eksklusif yang akan menjadi bagian 
+            berharga dari perjalanan fashion dan keindahan tradisional Anda. Selamat berbelanja di Kastara, 
+            di mana cerita budaya dan keunikan bertemu dalam satu platform!
             </p>
 
             <div class="bor16 p-l-29 p-b-9 m-t-22">
               <p class="stext-114 cl6 p-r-40 p-b-11">
-                Creativity is just connecting things. When you ask creative people how they did something, they feel a
-                little guilty because they didn't really do it, they just saw something. It seemed obvious to them after
-                a while.
+              Memikat Hati, Membawa Nusantara ke Gaya Anda!
               </p>
 
               <span class="stext-111 cl8">
-								- Steve Job’s
+								- Kastara Team
 							</span>
             </div>
           </div>
