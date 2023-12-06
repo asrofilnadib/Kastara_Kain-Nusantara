@@ -13,7 +13,7 @@
   <!-- Content page -->
   <section class="bg0 p-t-75 p-b-120">
     <div class="container">
-      <div class="row p-b-148">
+      <div class="row p-b-68">
         <div class="col-md-7 col-lg-8">
           <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
             <h3 class="mtext-111 cl2 p-b-16">
