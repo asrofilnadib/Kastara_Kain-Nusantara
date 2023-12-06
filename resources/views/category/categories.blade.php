@@ -5,7 +5,7 @@
         @foreach ($viewData["category"] as $category)
            <ul>
                <li>
-                   <h2 href="/categories/{{ $category->name }}">{{ $category->name }}</h2>
+                   <h2><a href="/categories/{{ $category->id }}">{{ $category->name }}</a></h2>
                </li>
            </ul>
         @endforeach

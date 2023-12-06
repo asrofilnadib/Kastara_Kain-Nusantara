@@ -35,6 +35,8 @@
               {{ $viewData['product']->getName() }}
             </h4>
 
+            <h5 class="stext-104 cl3"><a href="/category/{{ $viewData['product']->category->id }}">{{ $viewData['product']->category->name }}</a></h5>
+
             <span class="mtext-106 cl2">
 							${{ $viewData['product']->getPrice() }}
 						</span>
