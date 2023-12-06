@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.apps')
 @section('title', $viewData["title"])
 @section('content')
     <h1 class="mb-5 fs-6">Category: </h1>
