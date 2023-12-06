@@ -14,7 +14,7 @@
               <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
               <div class="slick3 gallery-lb">
-                <div class="item-slick3" data-thumb="images/product-detail-01.jpg">
+                <div class="item-slick3" data-thumb="/../images/product-detail-01.jpg">
                   <div class="wrap-pic-w pos-relative">
                     <img src="{{ asset('/storage/'. $viewData['product']->getImage()) }}" alt="IMG-PRODUCT">
 
