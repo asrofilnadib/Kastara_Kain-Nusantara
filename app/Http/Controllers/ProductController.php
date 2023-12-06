@@ -15,7 +15,7 @@ class ProductController extends Controller
         }
 
         $viewData = [
-          'title' =>'Products - Online Store',
+          'title' => 'Product - Online Store',
           'subtitle' => 'List of products',
           'products' => $product->paginate(2)
         ];

@@ -37,7 +37,7 @@
         {{--<div class="col">
           <div class="mb-3 row">
             <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Category:</label>
-            @foreach($viewData['categories'] as $category)
+            @foreach($viewData['category'] as $category)
               <div class="col-lg-10 col-md-6 col-sm-12">
                 <option value="{{ $category->id }}">{{ $category->name }}</option>
               </div>

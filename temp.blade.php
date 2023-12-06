@@ -55,7 +55,8 @@
                     </div>
                   </div>
 
-                  <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail" type="submit">
+                  <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail"
+                          type="submit">
                     Add to cart
                   </button>
                 </div>
@@ -71,11 +72,13 @@
                 </a>
               </div>
 
-              <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Facebook">
+              <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
+                 data-tooltip="Facebook">
                 <i class="fa fa-facebook"></i>
               </a>
 
-              <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100" data-tooltip="Twitter">
+              <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
+                 data-tooltip="Twitter">
                 <i class="fa fa-twitter"></i>
               </a>
 

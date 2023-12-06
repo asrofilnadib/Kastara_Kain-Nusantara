@@ -17,13 +17,13 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table('categories')->insert([
+        DB::table('category')->insert([
             'name' => Str::random(12),
         ]);
-        DB::table('categories')->insert([
+        DB::table('category')->insert([
             'name' => 'Jawa Barat',
         ]);
-        DB::table('categories')->insert([
+        DB::table('category')->insert([
             'name' => 'Jawa Timur',
         ]);
     }

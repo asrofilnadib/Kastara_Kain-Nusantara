@@ -3,6 +3,7 @@
     use App\Http\Controllers\Admin\AdminHomeController;
     use App\Http\Controllers\Admin\AdminProductController;
     use App\Http\Controllers\CartController;
+    use App\Http\Controllers\CategoryController;
     use App\Http\Controllers\HomeController;
     use App\Http\Controllers\MyAccountController;
     use App\Http\Controllers\ProductController;
@@ -33,6 +34,11 @@ Route::get('/products', [ProductController::class, 'index'])
     ->name("product.index");
 Route::get('/products/{id}', [ProductController::class, 'show'])
     ->name("product.show");
+
+Route::get('/category', [CategoryController::class, 'index'])
+    ->name("category.index");
+Route::get('/category/{id}', [CategoryController::class, 'show'])
+    ->name("category.show");
 
 Route::get('/cart', [CartController::class, 'index'])
     ->name('cart.index');
