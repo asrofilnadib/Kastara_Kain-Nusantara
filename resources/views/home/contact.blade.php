@@ -47,7 +47,7 @@
 							</span>
 
               <p class="stext-115 cl6 size-213 p-t-18">
-                Banjarmasin, Indonesia
+                Ibu Kota Nusantara, Indonesia
               </p>
             </div>
           </div>

@@ -44,7 +44,7 @@
                         <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11" href="{{ route('login') }}">Login</a>
                         <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-2" href="{{ route('register') }}" role="button">Register</a>
                     @else
-                        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-3" href="{{ route('myaccount.orders') }}">My Orders</a>
+                        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-3 text-decoration-none" href="{{ route('myaccount.orders') }}">My Orders</a>
                         <form id="logout" action="{{ route('logout') }}" method="POST">
                             <a role="button" class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-1"
                                onclick="document.getElementById('logout').submit();">Logout</a>
@@ -91,61 +91,20 @@
 
     <!-- Menu Mobile -->
     <div class="menu-mobile">
-        <ul class="topbar-mobile">
-            <li>
-                <div class="left-top-bar">
-                    Free shipping for standard order over $100
-                </div>
-            </li>
-
-            <li>
-                <div class="right-top-bar flex-w h-full">
-                    <a href="#" class="flex-c-m p-lr-10 trans-04">
-                        Help & FAQs
-                    </a>
-
-                    <a href="#" class="flex-c-m p-lr-10 trans-04">
-                        My Account
-                    </a>
-
-                    <a href="#" class="flex-c-m p-lr-10 trans-04">
-                        EN
-                    </a>
-
-                    <a href="#" class="flex-c-m p-lr-10 trans-04">
-                        USD
-                    </a>
-                </div>
-            </li>
-        </ul>
 
         <ul class="main-menu-m">
-            <li>
-                <a href="index.html">Home</a>
-                <span class="arrow-main-menu-m">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
-            </li>
-
-            <li>
-                <a href="product.html">Shop</a>
-            </li>
-
-            <li>
-                <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
-            </li>
-
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-
-            <li>
-                <a href="about.html">About</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
+        <li class="nav-item {{ request()->is('/') ? 'active-menu' : '' }}">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item {{ request()->is('products') ? 'active-menu' : '' }}">
+                            <a class="nav-link active" href="/products">Product</a>
+                        </li>
+                        <li class="nav-item {{ request()->is('about') ? 'active-menu' : '' }}">
+                            <a class="nav-link active" href="/about">About</a>
+                        </li>
+                        <li class="nav-item {{ request()->is('contact') ? 'active-menu' : '' }}">
+                            <a class="nav-link active" href="/contact">Contact</a>
+                        </li>
         </ul>
     </div>
 
