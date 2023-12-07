@@ -1,5 +1,5 @@
 @extends('layouts.apps')
-@section('title', $viewData['title']);
+@section('title', $viewData['title'])
 @section('content')
   <!-- Title page -->
   <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-03.jpg');">
@@ -87,10 +87,4 @@
       </div>
     </div>
   </section>
-
-  <!-- Map -->
-  <div class="map">
-    <div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png"
-         data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
-  </div>
 @endsection
