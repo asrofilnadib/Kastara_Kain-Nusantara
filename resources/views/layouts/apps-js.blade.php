@@ -97,6 +97,19 @@
     })
   });
 </script>
+
+<script>
+    function updateQuantity(productId, change) {
+        var currentQuantity = parseInt(document.getElementById('quantity_' + productId).value);
+        var newQuantity = currentQuantity + change;
+
+        if (newQuantity < 1) {
+            return;
+        }
+        document.getElementById('quantity_' + productId).value = newQuantity;
+        document.getElementById('update_quantity_form_' + productId).submit();
+    }
+</script>
 <!--===============================================================================================-->
 <script src="/../js/main.js"></script>
 

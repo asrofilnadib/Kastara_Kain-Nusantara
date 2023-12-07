@@ -11,16 +11,16 @@
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+    /*
+    |--------------------------------------------------------------------------
+    | Web Routes
+    |--------------------------------------------------------------------------
+    |
+    | Here is where you can register web routes for your application. These
+    | routes are loaded by the RouteServiceProvider within a group which
+    | contains the "web" middleware group. Now create something great!
+    |
+    */
 
 Auth::routes();
 
@@ -45,9 +45,11 @@ Route::get('/cart', [CartController::class, 'index'])
 
 Route::middleware('auth.guest')->group(function () {
     Route::get('/cart/delete', [CartController::class, 'delete'])
-    ->name('cart.delete');
+        ->name('cart.delete');
     Route::post('/cart/add/{id}', [CartController::class, 'add'])
-    ->name("cart.add");
+        ->name("cart.add");
+    Route::post('/cart/update/{id}', [CartController::class, 'update'])
+        ->name('cart.update');
 });
 
 Route::middleware('auth')->group(function () {

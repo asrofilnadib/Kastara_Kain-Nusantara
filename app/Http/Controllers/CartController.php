@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+    namespace App\Http\Controllers;
 
-use App\Models\Product;
-use App\Models\Order;
-use App\Models\Item;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+    use App\Models\Product;
+    use App\Models\Order;
+    use App\Models\Item;
+    use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
@@ -18,7 +18,7 @@ class CartController extends Controller
         $productsInSession = $request->session()->get("products");
         if ($productsInSession) {
             $productsInCart = Product::findMany(array_keys($productsInSession));
-            $total = Product::sumPricesByQuantities($productsInCart, $productsInSession);
+            $total += Product::sumPricesByQuantities($productsInCart, $productsInSession);
         }
 
         $cartCount = count($productsInCart);
@@ -26,7 +26,7 @@ class CartController extends Controller
 
         $viewData = [];
         $viewData["title"] = "Cart - Online Store";
-        $viewData["subtitle"] =  "Shopping Cart";
+        $viewData["subtitle"] = "Shopping Cart";
         $viewData["total"] = $total;
         $viewData["products"] = $productsInCart;
         return view('cart.index', compact('cartCount'))->with("viewData", $viewData);
@@ -35,8 +35,13 @@ class CartController extends Controller
     public function add(Request $request, $id)
     {
         if (Auth::check()) {
-            $products = $request->session()->get("products");
-            $products[$id] = $request->input('quantity');
+            $products = $request->session()->get("products", []);
+
+            if (isset($products[$id])) {
+                $products[$id] += $request->input('quantity');
+            } else {
+                $products[$id] = $request->input('quantity');
+            }
             $request->session()->put('products', $products);
         } else {
             return redirect()->route('login')->with('error', 'Please log in to add products to the cart.');
@@ -84,11 +89,19 @@ class CartController extends Controller
 
             $viewData = [];
             $viewData["title"] = "Purchase - Online Store";
-            $viewData["subtitle"] =  "Purchase Status";
-            $viewData["order"] =  $order;
+            $viewData["subtitle"] = "Purchase Status";
+            $viewData["order"] = $order;
             return view('cart.purchase')->with("viewData", $viewData);
         }
 
+        return redirect()->route('cart.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+        $product = $request->session()->get('product');
+        $product[$id] = $request->input('quantity');
+        $request->session()->put('product', $product);
         return redirect()->route('cart.index');
     }
 }
