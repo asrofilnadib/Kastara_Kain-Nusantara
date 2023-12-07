@@ -93,6 +93,16 @@ class Product extends Model
         $this->attributes['price'] = $price;
     }
 
+    public function getKode()
+    {
+        return $this->attributes['kode_product'];
+    }
+
+    public function setKode($kode)
+    {
+        $this->attributes['kode_product'] = $kode;
+    }
+
     public function getCreatedAt()
     {
         return $this->attributes['created_at'];

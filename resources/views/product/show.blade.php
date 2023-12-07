@@ -10,8 +10,8 @@
                 <div class="col-md-6 col-lg-7 p-b-30">
                     <div class="p-l-25 p-r-30 p-lr-0-lg">
                         <div class="wrap-slick3 flex-sb flex-w">
-                            <div class="wrap-slick3-dots"></div>
-                            <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
+                            <div class="wrap-slick3"></div>
+                            <div class="wrap-slick3 flex-sb-m flex-w"></div>
 
                             <div class="slick3 gallery-lb">
                                 <div class="item-slick3" data-thumb="/../images/product-detail-01.jpg">
@@ -35,10 +35,6 @@
                         <h4 class="mtext-105 cl2 js-name-detail p-b-14">
                             {{ $viewData['product']->getName() }}
                         </h4>
-
-                        <h5 class="stext-104 cl3"><a
-                                href="/category/{{ $viewData['product']->category->id }}">{{ $viewData['product']->category->name }}</a>
-                        </h5>
 
                         <span class="mtext-106 cl2">
 							${{ $viewData['product']->getPrice() }}
@@ -106,13 +102,13 @@
                 <div class="tab01">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item p-b-10">
-                            <a class="nav-link active" data-toggle="tab" href="#description" role="tab">Description</a>
+                        <li class="nav-item p-b-10 fs-5 mtext-105">
+                            Description
                         </li>
                     </ul>
 
                     <!-- Tab panes -->
-                    <div class="tab-content p-t-43">
+                    <div class="tab-content p-t-33">
                         <!-- - -->
                         <div class="tab-pane fade show active" id="description" role="tabpanel">
                             <div class="how-pos2 p-lr-15-md">
@@ -126,15 +122,16 @@
             </div>
         </div>
 
-        {{--<div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15">
+        <div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15">
             <span class="stext-107 cl6 p-lr-25">
-              SKU: JAK-01
+              {{ $viewData['product']->getKode() }}
             </span>
 
-          <span class="stext-107 cl6 p-lr-25">
-              Categories: Jacket, Men
+            <span class="stext-107 cl6 p-lr-25">
+              Categories: <a
+                    href="/category/{{ $viewData['product']->category->id }}">{{ $viewData['product']->category->name }}</a>
             </span>
-        </div>--}}
+        </div>
     </section>
 
     <div class="card mb-3">
@@ -155,7 +152,8 @@
                             <div class="col-auto">
                                 <div class="input-group col-auto">
                                     <div class="input-group-text">Quantity</div>
-                                    <input type="number" min="1" max="10" class="form-control quantity-input" name="quantity" value="1">
+                                    <input type="number" min="1" max="10" class="form-control quantity-input"
+                                           name="quantity" value="1">
                                 </div>
                             </div>
                             <div class="col-auto">
