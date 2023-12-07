@@ -2,9 +2,14 @@
 @section('title', $viewData["title"])
 @section('subtitle', $viewData["subtitle"])
 @section('content')
+<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('/../images/bg-04.jpg');">
+    <h2 class="ltext-105 cl0 txt-center">
+      Cart
+    </h2>
+  </section>
+
 <div class="card">
   <div class="card-header">
-    Products in Cart
   </div>
   <div class="card-body">
     <table class="table table-bordered table-striped text-center">
