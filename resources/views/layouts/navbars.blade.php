@@ -41,8 +41,8 @@
                     </a>
 
                     @guest
-                        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11" href="{{ route('login') }}">Login</a>
-                        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-2" href="{{ route('register') }}" role="button">Register</a>
+                        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 text-decoration-none" href="{{ route('login') }}">Login</a>
+                        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-2 text-decoration-none" href="{{ route('register') }}" role="button">Register</a>
                     @else
                         <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-3 text-decoration-none" href="{{ route('myaccount.orders') }}">My Orders</a>
                         <form id="logout" action="{{ route('logout') }}" method="POST">
