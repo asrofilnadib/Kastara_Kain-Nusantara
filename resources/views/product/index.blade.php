@@ -10,7 +10,7 @@
     </h2>
   </section>
 
-  <section class="bg0 p-t-23 p-b-20">
+  <section class="bg0 p-t-55 p-b-20">
     <div class="container">
       @if($viewData['products']->count())
         <div class="row isotope-grid">
