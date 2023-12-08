@@ -10,7 +10,7 @@
     </h2>
   </section>
 
-  <section class="bg0 p-t-23 p-b-20">
+  <section class="bg0 p-t-55 p-b-20">
     <div class="container">
       @if($viewData['products']->count())
         <div class="row isotope-grid">
@@ -25,7 +25,7 @@
                 <div class="block2-txt flex-w flex-t p-t-14">
                   <div class="block2-txt-child1 flex-col-l ">
                     <a href="{{ route('product.show', ['id' => $product->getId()]) }}"
-                       class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                       class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6 text-decoration-none">
                       {{ $product->getName() }}
                     </a>
                     <span class="stext-105 cl3">

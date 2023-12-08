@@ -46,7 +46,6 @@ class CartController extends Controller
         } else {
             return redirect()->route('login')->with('error', 'Please log in to add products to the cart.');
         }
-
         return redirect()->route('cart.index');
     }
 
