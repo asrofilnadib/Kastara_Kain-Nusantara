@@ -2,12 +2,13 @@
 @section('title', $viewData["title"])
 @section('subtitle', $viewData["subtitle"])
 @section('content')
-@forelse ($viewData["orders"] as $order)
 <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('/../images/bg-05.jpg');">
     <h2 class="ltext-105 cl0 txt-center">
       My Orders
     </h2>
   </section>
+  
+@forelse ($viewData["orders"] as $order)
 <div class="card mb-4">
   <div class="card-header">
     Order #{{ $order->getId() }}
