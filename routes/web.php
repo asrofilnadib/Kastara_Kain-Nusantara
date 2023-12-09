@@ -72,4 +72,6 @@ Route::middleware('admin')->group(function () {
         ->name("admin.product.edit");
     Route::put('/admin/products/{id}/update', [AdminProductController::class, 'update'])
         ->name("admin.product.update");
+    Route::get('/admin/products/checkSlug', [AdminProductController::class, 'checkSlug'])
+        ->name('admin.product.checkSlug');
 });

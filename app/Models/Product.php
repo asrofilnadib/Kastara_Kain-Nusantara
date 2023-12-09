@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Item;
 
@@ -18,6 +19,8 @@ class Product extends Model
      * $this->attributes['updated_at'] - timestamp - contains the product update date
      * $this->items - Item[] - contains the associated items
      */
+
+    use Sluggable;
 
     public static function validate($request)
     {
@@ -62,6 +65,37 @@ class Product extends Model
     {
         $this->attributes['name'] = $name;
     }
+
+    public function getSlug()
+    {
+        return $this->attributes['slug'];
+    }
+
+    public function setSlug($slug)
+    {
+        $this->attributes['slug'] = $slug;
+    }
+
+    public function getCategoryId()
+    {
+        return $this->attributes['category_id'];
+    }
+
+    public function setCategoryId($categoryId)
+    {
+        $this->attributes['category_id'] = $categoryId;
+    }
+
+    public function getSKU()
+    {
+        return $this->attributes['kode_product'];
+    }
+
+    public function setSKU($kodeProduct)
+    {
+        $this->attributes['kode_product'] = $kodeProduct;
+    }
+
 
     public function getDescription()
     {
@@ -136,5 +170,14 @@ class Product extends Model
     public function setItems($items)
     {
         $this->items = $items;
+    }
+
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+              'source' => 'name'
+            ]
+        ];
     }
 }

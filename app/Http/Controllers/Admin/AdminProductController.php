@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Category;
 use App\Models\Product;
 use App\Http\Controllers\Controller;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -25,6 +26,9 @@ class AdminProductController extends Controller
 
         $newProduct = new Product();
         $newProduct->setName($request->input('name'));
+        $newProduct->setCategoryId($request->input('category_id'));
+        $newProduct->setSKU($request->input('kode_product'));
+        $newProduct->setSlug($request->input('slug'));
         $newProduct->setDescription($request->input('description'));
         $newProduct->setPrice($request->input('price'));
         $newProduct->setImage('game.png');
@@ -80,5 +84,11 @@ class AdminProductController extends Controller
         }
         $product->save();
         return redirect()->route('admin.product.index');
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Product::class, 'slug', $request->name);
+        return \response()->json(['slug' => $slug]);
     }
 }

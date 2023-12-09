@@ -2,12 +2,12 @@
 
     namespace Database\Seeders;
 
-    use App\Models\Category;
-    use App\Models\Product;
-    use App\Models\User;
-    use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-    use Illuminate\Database\Seeder;
-    use Illuminate\Support\Facades\Hash;
+use App\Models\Category;
+use App\Models\Product;
+use App\Models\User;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -27,19 +27,24 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Category::create([
-            'name' => 'Sumatera'
+            'name' => 'Sumatera',
+            'image' => 'banner-01.jpg'
         ]);
         Category::create([
-            'name' => 'Kalimantan'
+            'name' => 'Kalimantan',
+            'image' => 'banner-02.jpg'
         ]);
         Category::create([
-            'name' => 'Jawa'
+            'name' => 'Jawa',
+            'image' => 'banner-03.jpg'
         ]);
         Category::create([
-          'name' => 'Sulawesi'
+            'name' => 'Sulawesi',
+            'image' => 'banner-04.jpg'
         ]);
         Category::create([
-          'name' => 'Papua'
+            'name' => 'Papua',
+            'image' => 'banner-05.jpg'
         ]);
 
 

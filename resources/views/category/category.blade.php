@@ -5,7 +5,7 @@
     <div class="container">
       <div class="p-t-65">
         <h4 class="mtext-112 cl5 p-b-33">
-          Featured Products
+          Produk Dari Pulau {{ $viewData['category'] }}
         </h4>
 
         <ul>
