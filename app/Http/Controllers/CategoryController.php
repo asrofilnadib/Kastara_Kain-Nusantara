@@ -22,8 +22,8 @@ class CategoryController extends Controller
     {
         $viewData = [
             'title' => 'Category'.$category->name.'- Kastara',
-            'products' => Product::latest(),
-            'category' => $category,
+            'products' => $category->products,
+            'category' => $category->name,
         ];
         return view('category.category')->with('viewData', $viewData);
     }

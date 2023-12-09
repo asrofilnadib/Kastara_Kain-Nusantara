@@ -17,7 +17,7 @@ class ProductController extends Controller
         $viewData = [
           'title' => 'Product - Online Store',
           'subtitle' => 'List of products',
-          'products' => $product->paginate(2)
+          'products' => $product->paginate(3)
         ];
         return view('product.index')
           ->with("viewData", $viewData)
