@@ -11,7 +11,9 @@ class ProductController extends Controller
     {
         $product = Product::latest();
         if (request('search')) {
-            $product->where('name', 'like', '%' . request('search') . '%');
+            $product
+              ->where('kode_product', 'like', '%' . request('search') . '%')
+              ->orWhere('name', 'like', '%' . request('search') . '%');
         }
 
         $viewData = [
@@ -20,8 +22,7 @@ class ProductController extends Controller
           'products' => $product->paginate(3)
         ];
         return view('product.index')
-          ->with("viewData", $viewData)
-          ->with('products', $product);
+          ->with("viewData", $viewData);
     }
 
     public function show($slug)
