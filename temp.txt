@@ -1,0 +1,10 @@
+Category::create([
+  'name' => "Jawa Tengah"
+])
+
+Product::create([
+  'name' => 'something',
+  'description' => ''
+  'image' =>
+  'price'
+])

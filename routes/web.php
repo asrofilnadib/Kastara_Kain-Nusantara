@@ -32,7 +32,7 @@ Route::get('/contact', [HomeController::class, 'contact'])
     ->name("home.contact");
 Route::get('/products', [ProductController::class, 'index'])
     ->name("product.index");
-Route::get('/products/{id}', [ProductController::class, 'show'])
+Route::get('/products/{slug}', [ProductController::class, 'show'])
     ->name("product.show");
 
 Route::get('/category', [CategoryController::class, 'index'])

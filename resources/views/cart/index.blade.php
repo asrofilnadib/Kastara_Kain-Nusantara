@@ -33,17 +33,18 @@
                     <td class="column-2">{{ $product->getName() }}</td>
                     <td class="column-3">$ {{ $product->getPrice() }}.00</td>
                     <td class="column-4">
-                      <div class="wrap-num-product flex-w m-l-auto m-r-0">
+                      {{ session('products')[$product->getId()]}}
+                      {{--<div class="wrap-num-product flex-w m-l-auto m-r-0">
                         <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
                           <i class="fs-16 zmdi zmdi-minus"></i>
                         </div>
 
-                        <input class="mtext-104 cl3 txt-center num-product" type="number" name="#" value="1" min="1">
+                        <input class="mtext-104 cl3 txt-center num-product" type="number" name="#" value="{{ session('products')[$product->getId()]}}" min="1">
 
                         <div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
                           <i class="fs-16 zmdi zmdi-plus"></i>
                         </div>
-                      </div>
+                      </div>--}}
                     </td>
                     <td class="column-5">$ {{ $product->getPrice() * session('products')[$product->getId()] }}.00</td>
                   </tr>
