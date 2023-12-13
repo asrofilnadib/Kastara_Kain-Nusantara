@@ -31,7 +31,7 @@
               <td>{{ $item->getId() }}</td>
               <td>
                 <a class="link-success text-decoration-none"
-                   href="{{ route('product.show', ['id'=> $item->getProduct()->getId()]) }}">
+                   href="{{ route('product.show', ['slug'=> $item->getProduct()->getSlug()]) }}">
                   {{ $item->getProduct()->getName() }}
                 </a>
               </td>

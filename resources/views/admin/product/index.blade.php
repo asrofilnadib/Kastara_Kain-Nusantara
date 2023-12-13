@@ -20,7 +20,7 @@
           <div class="col">
             <div class="mb-3 row">
               <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Name:</label>
-              <div class="col-lg-10 col-md-6 col-sm-12">
+              <div class="col-lg-9 col-md-6 col-sm-12">
                 <input name="name" value="{{ old('name') }}" type="text" class="form-control" id="name">
               </div>
             </div>
@@ -38,15 +38,15 @@
           <div class="col">
             <div class="mb-3 row">
               <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Slug:</label>
-              <div class="col-lg-10 col-md-6 col-sm-12">
-                <input name="slug" value="{{ old('slug') }}" type="text" class="form-control" id="slug">
+              <div class="col-lg-9 col-md-6 col-sm-12">
+                <input name="slug" value="{{ old('slug') }}" type="text" class="form-control" id="slug" disabled>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="mb-3 row">
               <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Category:</label>
-              <div class="col-lg-10 col-md-6 col-sm-12">
+              <div class="col-lg-9 col-md-6 col-sm-12">
                 <select class="form-control" name="category_id">
                   @foreach($viewData['category'] as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>

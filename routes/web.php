@@ -1,15 +1,17 @@
 <?php
 
-    use App\Http\Controllers\Admin\AdminHomeController;
-    use App\Http\Controllers\Admin\AdminProductController;
-    use App\Http\Controllers\CartController;
-    use App\Http\Controllers\CategoryController;
-    use App\Http\Controllers\HomeController;
-    use App\Http\Controllers\MyAccountController;
-    use App\Http\Controllers\ProductController;
-    use App\Models\Category;
-    use Illuminate\Support\Facades\Auth;
-    use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AdminHomeController;
+use App\Http\Controllers\Admin\AdminProductController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Mail\MailController;
+use App\Http\Controllers\MyAccountController;
+use App\Http\Controllers\ProductController;
+use App\Mail\ContactMessage;
+use App\Models\Category;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
     /*
     |--------------------------------------------------------------------------
@@ -30,6 +32,10 @@ Route::get('/about', [HomeController::class, 'about'])
     ->name("home.about");
 Route::get('/contact', [HomeController::class, 'contact'])
     ->name("home.contact");
+
+Route::post('/contact/send', [MailController::class, 'sendMail'])
+  ->name('contact.send');
+
 Route::get('/products', [ProductController::class, 'index'])
     ->name("product.index");
 Route::get('/products/{slug}', [ProductController::class, 'show'])

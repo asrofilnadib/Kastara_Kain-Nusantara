@@ -13,7 +13,11 @@
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
-        "laravel/ui": "^3.4"
+        "laravel/ui": "^3.4",
+        "larswiegers/laravel-maps": "^0.17.0",
+        "nyholm/psr7": "^1.8",
+        "railsware/mailtrap-php": "^1.7",
+        "symfony/http-client": "^7.0"
     },
     "require-dev": {
       "roave/security-advisories": "dev-latest"
@@ -61,7 +65,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
