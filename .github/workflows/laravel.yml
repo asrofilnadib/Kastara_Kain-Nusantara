@@ -60,6 +60,7 @@ jobs:
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
           config: ${{ secrets.CONFIG }} # ssh_config; optional
           if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
+          token: ${{ secrets.PAT_TOKEN }}
           
       - name: rsync over SSH
         run: rsync -r ./foo/ user@remote:bar/
