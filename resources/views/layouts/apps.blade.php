@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
           crossorigin="anonymous"/>
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="/../images/icons/favicon.png"/>
+    <link rel="icon" type="image/png" href="/../images/icons/favicon-logo.png"/>
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="/../vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -41,7 +41,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <!--===============================================================================================-->
-  <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+  <link rel="icon" type="image/png" href="images/icons/favicon-logo.png"/>
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
   <!--===============================================================================================-->

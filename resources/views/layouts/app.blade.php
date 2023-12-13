@@ -7,7 +7,7 @@
         crossorigin="anonymous"/>
   <link href="{{ asset('/css/apps.css') }}" rel="stylesheet"/>
   <!--===============================================================================================-->
-  <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+  <link rel="icon" type="image/png" href="/../images/icons/favicon-logo.png"/>
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
   <!--===============================================================================================-->

@@ -47,7 +47,7 @@
             <div class="mb-3 row">
               <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Category:</label>
               <div class="col-lg-10 col-md-6 col-sm-12">
-                <select class="form-select" name="category_id">
+                <select class="form-control" name="category_id">
                   @foreach($viewData['category'] as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                   @endforeach
@@ -61,7 +61,7 @@
             <div class="mb-3 row">
               <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Image:</label>
               <div class="col-lg-10 col-md-6 col-sm-12">
-                <input class="form-control" type="file" name="image">
+                <input class="form-control-file" type="file" name="image">
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@
             <td>
               <a class="btn btn-primary"
                  href="{{route('admin.product.edit', ['id'=> $product->getId()])}}">
-                <i class="bi-pencil"></i>
+                <i class="icon-pencil"></i>
               </a>
             </td>
             <td>
@@ -114,7 +114,7 @@
                 @csrf
                 @method('DELETE')
                 <button class="btn btn-danger">
-                  <i class="bi-trash"></i>
+                  <i class="icon-close"></i>
                 </button>
               </form>
             </td>
