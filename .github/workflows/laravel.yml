@@ -39,26 +39,3 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
-      
-  deploy:
-      runs-on: ubuntu-latest
-
-      needs: build
-
-      steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-  
-      - name: Copy .env
-        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
-  
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.8.0
-        with:
-            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-  
-      - name: Deploy to Production
-        run: scp -r ./ ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }}:/path/to/your/laravel
-  
-      - name: SSH into Server
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} 'cd /path/to/your/laravel && composer install --optimize-autoloader && php artisan migrate --force && php artisan config:cache && php artisan route:cache'
