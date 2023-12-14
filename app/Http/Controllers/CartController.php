@@ -7,6 +7,7 @@
     use App\Models\Item;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Auth;
+    use RealRashid\SweetAlert\Facades\Alert;
 
 class CartController extends Controller
 {
@@ -46,6 +47,7 @@ class CartController extends Controller
         } else {
             return redirect()->route('login')->with('error', 'Please log in to add products to the cart.');
         }
+        Alert::success('', 'Your item is added to cart!');
         return redirect()->route('cart.index');
     }
 
