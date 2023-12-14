@@ -2,6 +2,12 @@
 
 @section('content')
 <div class="container" style="margin: 110px 100px">
+@if(session('error'))
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>{{ session('error') }}</strong>
+  <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
