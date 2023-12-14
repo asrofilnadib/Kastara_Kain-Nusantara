@@ -1,3 +1,4 @@
+@include('sweetalert::alert')
 <!-- Header -->
 <header>
   <!-- Header desktop -->
