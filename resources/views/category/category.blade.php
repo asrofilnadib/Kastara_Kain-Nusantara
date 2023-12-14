@@ -11,12 +11,12 @@
         <ul>
           @foreach( $viewData['products'] as $products)
             <li class="flex-w flex-t p-b-30">
-              <a href="/products/{{ $products->id }}" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
+              <a href="/products/{{ $products->slug }}" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
                 <img src="/storage/{{ $products->image }}" alt="PRODUCT" class="w-100" style="width: 160px">
               </a>
 
               <div class="size-215 flex-col-t p-t-8">
-                <a href="/produucts/{{ $products->id }}" class="stext-116 cl8 hov-cl1 trans-04 text-decoration-none">
+                <a href="/products/{{ $products->slug }}" class="stext-116 cl8 hov-cl1 trans-04 text-decoration-none">
                   {{ $products->name }}
                 </a>
 

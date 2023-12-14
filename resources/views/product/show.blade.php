@@ -124,7 +124,7 @@
             </span>
 
       <span class="stext-107 cl6 p-lr-25">
-              Categories: Pulau <a class="text-decoration-none stext-107 cl6" href="/category/{{ $viewData['product']->category->id }}">
+              Categories: Pulau <a class="text-decoration-none stext-107 cl6" href="/category/{{ $viewData['product']->category->name }}">
           {{ $viewData['product']->category->name }}
           </a>
             </span>
