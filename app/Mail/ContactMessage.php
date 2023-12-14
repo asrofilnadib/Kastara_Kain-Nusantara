@@ -21,10 +21,11 @@ class ContactMessage extends Mailable
      */
 
     public $email;
-    public $msg;
-    public function __construct($email)
+    public $message;
+    public function __construct($email, $message)
     {
         $this->email = $email;
+        $this->message = $message;
     }
 
     /**

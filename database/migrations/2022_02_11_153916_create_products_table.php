@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('kode_product')->unique();
             $table->text('description');
             $table->string('image');
-            $table->integer('price');
+            $table->float('price');
             $table->timestamps();
         });
     }

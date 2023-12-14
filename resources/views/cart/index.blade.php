@@ -31,7 +31,7 @@
                       </div>
                     </td>
                     <td class="column-2">{{ $product->getName() }}</td>
-                    <td class="column-3">$ {{ $product->getPrice() }}.00</td>
+                    <td class="column-3">$ {{ $product->getPrice() }}</td>
                     <td class="column-4">
                       {{ session('products')[$product->getId()]}}
                       {{--<div class="wrap-num-product flex-w m-l-auto m-r-0">
@@ -46,7 +46,7 @@
                         </div>
                       </div>--}}
                     </td>
-                    <td class="column-5">$ {{ $product->getPrice() * session('products')[$product->getId()] }}.00</td>
+                    <td class="column-5">$ {{ $product->getPrice() * session('products')[$product->getId()] }}</td>
                   </tr>
                 @endforeach
               </table>

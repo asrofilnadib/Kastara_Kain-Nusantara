@@ -21,7 +21,7 @@
                 </a>
 
                 <span class="stext-116 cl6 p-t-20">
-											${{ $products->price }}.00
+											${{ $products->price }}
 										</span>
               </div>
             </li>

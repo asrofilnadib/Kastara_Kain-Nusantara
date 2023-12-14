@@ -17,7 +17,6 @@
             <h4 class="mtext-105 cl2 txt-center p-b-30">
               Send Us A Message
             </h4>
-            @csrf
             <div class="bor8 m-b-20 how-pos4-parent">
               <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email"
                      placeholder="Your Email Address">
@@ -38,6 +37,7 @@
                 {{ session('success') }}
               </div>
             @endif
+            @csrf
           </form>
         </div>
 
@@ -69,7 +69,7 @@
 							</span>
 
               <p class="stext-115 cl1 size-213 p-t-18">
-                +62 812 5611 7428
+                (021) 1808245
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@
 							</span>
 
               <p class="stext-115 cl1 size-213 p-t-18">
-                KastaraProject@dicoding.org
+                cs@kastara.co.id
               </p>
             </div>
           </div>
@@ -96,10 +96,11 @@
 
   <x-maps-google
     :markers="[
-        ['lat' => 46.056946, 'long' => 14.505752],
-        ['lat' => 41.902782, 'long' => 12.496365]
+        ['lat' => -3.3215013949875547, 'long' => 114.58810001193311, 'title' => 'Kastara Store'],
+//        ['lat' => -0.9727849773643844, 'long' => 116.7085345486981, 'title' => 'Aku di IKN IBUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU']
     ]"
     :centerToBoundsCenter="true"
-    :zoomLevel="7"
+    :zoomLevel="18"
+    :mapType="'hybrid'"
   ></x-maps-google>
 @endsection
