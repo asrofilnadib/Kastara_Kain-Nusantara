@@ -92,6 +92,7 @@ class CartController extends Controller
             $viewData["title"] = "Purchase - Online Store";
             $viewData["subtitle"] = "Purchase Status";
             $viewData["order"] = $order;
+            Alert::success('Thanks for order!', 'Your transaction is successful.');
             return view('cart.purchase')->with("viewData", $viewData);
         }
 
