@@ -9,8 +9,26 @@
     </h2>
   </section>
 
+  <div class="container">
+    <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+      <a href="/" class="stext-109 cl8 hov-cl1 trans-04">
+        Home
+        <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+      </a>
+
+      <a href="/products" class="stext-109 cl8 hov-cl1 trans-04">
+        Products
+        <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+      </a>
+
+      <span class="stext-109 cl4">
+          Cart
+        </span>
+    </div>
+  </div>
+
   <!-- Shoping Cart -->
-  <form class="bg0 p-t-75 p-b-85" method="post">
+  <form class="bg0 p-t-40 p-b-45" method="post">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">

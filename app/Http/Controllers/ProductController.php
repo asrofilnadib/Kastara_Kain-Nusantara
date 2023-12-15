@@ -28,11 +28,20 @@ class ProductController extends Controller
 
     public function show($slug)
     {
+
         $product = Product::where('slug', $slug)->first();
-        $viewData = [];
-        $viewData["title"] = $product->getName()." - Online Store";
-        $viewData["subtitle"] =  $product->getName()." - Product information";
-        $viewData["product"] = $product;
+
+        $recommendedProducts = Product::where('category_id', $product->category_id)
+          ->where('slug', '!=', $product->slug)
+          ->inRandomOrder()
+          ->limit(4)
+          ->get();
+        $viewData = [
+          'title' => $product->getName()." - Online Store",
+          'subtitle' => $product->getName()." - Product information",
+          'product' => $product,
+          'recomends' => $recommendedProducts
+        ];
 
         return view('product.show')->with("viewData", $viewData);
     }

@@ -35,7 +35,7 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css"/>
 </head>
 
 <body>
@@ -196,6 +196,7 @@
             <form id="logout" action="{{ route('logout') }}" method="POST">
               <a
                 class="sidebar-link sidebar-link"
+                href="#"
                 aria-haspopup="true"
                 aria-expanded="false"
                 role="button"
@@ -205,6 +206,7 @@
               >
               @csrf
             </form>
+
           </li>
         </ul>
       </nav>

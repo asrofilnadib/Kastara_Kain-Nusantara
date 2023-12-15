@@ -49,7 +49,7 @@ class CartController extends Controller
             return redirect()->route('login')->with('error', 'Please log in to add products to the cart.');
         }
         Alert::success('', 'Your item is added to cart!');
-        return view('cart.index');
+        return redirect()->route('cart.index');
     }
 
     public function delete(Request $request)

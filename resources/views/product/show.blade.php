@@ -1,10 +1,29 @@
+@php use App\Models\Product; @endphp
 @extends('layouts.apps')
 @section('title', $viewData["title"])
 @section('subtitle', $viewData["subtitle"])
 @section('content')
 
   <!-- Product Detail -->
-  <section class="sec-product-detail bg0 p-t-65 p-b-60">
+  <section class="sec-product-detail bg0 p-t-65 p-b-55">
+    <div class="container">
+      <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-5 p-b-35 p-lr-0-lg">
+        <a href="/" class="stext-109 cl8 hov-cl1 trans-04">
+          Home
+          <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+
+        <a href="/products" class="stext-109 cl8 hov-cl1 trans-04">
+          Products
+          <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+        </a>
+
+        <span class="stext-109 cl4 user-select-none">
+          {{ $viewData['product']->name  }}
+        </span>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-7 p-b-30">
@@ -61,8 +80,8 @@
                     </button>
                   </div>
                 </div>
+              </form>
             </div>
-            </form>
           </div>
           <!--  -->
           <div class="flex-w flex-m p-l-100 p-t-40 respon7">
@@ -116,18 +135,58 @@
         </div>
       </div>
     </div>
-    </div>
 
     <div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15">
-            <span class="stext-107 cl6 p-lr-25">
+            <span class="stext-107 cl6 p-lr-25 user-select-none">
               {{ $viewData['product']->getKode() }}
             </span>
 
       <span class="stext-107 cl6 p-lr-25">
-              Categories: Pulau <a class="text-decoration-none stext-107 cl6" href="/category/{{ $viewData['product']->category->name }}">
+              Categories: Pulau <a class="text-decoration-none stext-107 cl6"
+                                   href="/category/{{ $viewData['product']->category->name }}">
           {{ $viewData['product']->category->name }}
           </a>
             </span>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="sec-relate-product bg0 p-t-15 p-b-35">
+    <div class="container">
+      <div class="p-b-45">
+        <h3 class="ltext-106 cl5 txt-center">
+          Related Products
+        </h3>
+      </div>
+
+      <!-- Slide2 -->
+      <div class="wrap-slick2">
+        <div class="slick2">
+          @foreach($viewData['recomends'] as $recomend)
+            <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
+              <div class="block2">
+                <div class="block2-pic hov-img0">
+                  <a href="/products/{{ $recomend->slug }}">
+                  <img src="/storage/{{ $recomend->image }}" alt="IMG-PRODUCT">
+                  </a>
+                </div>
+
+                <div class="block2-txt flex-w flex-t p-t-14">
+                  <div class="block2-txt-child1 flex-col-l ">
+                    <a href="/products/{{ $recomend->slug }}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                      {{ $recomend->name }}
+                    </a>
+
+                    <span class="stext-105 cl3">
+										${{ $recomend->price }}
+									</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          @endforeach
+        </div>
+      </div>
     </div>
   </section>
 @endsection
