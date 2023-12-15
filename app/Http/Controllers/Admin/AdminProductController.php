@@ -53,7 +53,9 @@ class AdminProductController extends Controller
 
     public function delete($id)
     {
-        Product::destroy($id);
+        $product = Product::findOrFail($id);
+        $product->items()->delete();
+        $product->delete();
         return back();
     }
 
@@ -62,6 +64,7 @@ class AdminProductController extends Controller
         $viewData = [];
         $viewData["title"] = "Admin Page - Edit Product - Online Store";
         $viewData["product"] = Product::findOrFail($id);
+        $viewData["category"] = Category::all();
         return view('admin.product.edit')->with("viewData", $viewData);
     }
 

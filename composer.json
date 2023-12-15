@@ -18,7 +18,9 @@
         "nyholm/psr7": "^1.8",
         "railsware/mailtrap-php": "^1.7",
         "realrashid/sweet-alert": "^7.1",
-        "symfony/http-client": "^7.0"
+        "symfony/http-client": "^7.0",
+        "yajra/laravel-datatables-html": "^10.12",
+        "yajra/laravel-datatables-oracle": "^10.11"
     },
     "require-dev": {
       "roave/security-advisories": "dev-latest"

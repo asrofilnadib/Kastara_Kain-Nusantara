@@ -20,7 +20,7 @@ The background of our project is influenced by the declining enthusiasm for Indo
 
 4). Change or duplicate file ```.env.example``` with name ```.env```
 
-4). compile the assets with ```npm i && npm run dev```
+4). compile the assets with ```npm i && npm run dev``` after that run ```gulp copy```
 
 5). install composer packages with ```composer install --no-interaction --no-ansi```
     or update with ```composer update --no-interaction --no-ansi```

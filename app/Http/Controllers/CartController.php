@@ -25,11 +25,12 @@ class CartController extends Controller
         $cartCount = count($productsInCart);
         $request->session()->put('cartCount', $cartCount);
 
-        $viewData = [];
-        $viewData["title"] = "Cart - Online Store";
-        $viewData["subtitle"] = "Shopping Cart";
-        $viewData["total"] = $total;
-        $viewData["products"] = $productsInCart;
+        $viewData = [
+          'title' => "Cart - Online Store",
+          'subtitle' => "Shopping Cart",
+          'total' => $total,
+          'products' => $productsInCart
+        ];
         return view('cart.index', compact('cartCount'))->with("viewData", $viewData);
     }
 
@@ -48,7 +49,7 @@ class CartController extends Controller
             return redirect()->route('login')->with('error', 'Please log in to add products to the cart.');
         }
         Alert::success('', 'Your item is added to cart!');
-        return redirect()->route('cart.index');
+        return view('cart.index');
     }
 
     public function delete(Request $request)
@@ -95,8 +96,7 @@ class CartController extends Controller
             Alert::success('Thanks for order!', 'Your transaction is successful.');
             return view('cart.purchase')->with("viewData", $viewData);
         }
-
-        return redirect()->route('cart.index');
+        return redirect()->route('cart.purchase');
     }
 
     public function update(Request $request, $id)

@@ -35,6 +35,7 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
 </head>
 
 <body>
@@ -77,7 +78,7 @@
         <!-- ============================================================== -->
         <div class="navbar-brand">
           <!-- Logo icon -->
-          <a href="index.html">
+          <a href="/admin">
 
             <!-- Logo text -->
             <span class="logo-text">
@@ -133,13 +134,6 @@
             <a class="nav-link" href="javascript:void(0)">
               <form>
                 <div class="customize-input">
-                  <input
-                    class="form-control custom-shadow custom-radius border-0 bg-white"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <i class="form-control-icon" data-feather="search"></i>
                 </div>
               </form>
             </a>
@@ -155,15 +149,9 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <img
-                src="../assets/images/users/profile-pic.jpg"
-                alt="user"
-                class="rounded-circle"
-                width="40"
-              />
               <span class="ml-2 d-none d-lg-inline-block"
-              ><span>Hello,</span>
-                    <span class="text-dark">Jason Doe</span>
+              ><span></span>
+                    <span class="text-dark"> </span>
               </span>
             </a>
           </li>
@@ -265,6 +253,7 @@
 <script src="{{ asset('/dist/js/pages/dashboards/dashboard1.min.js') }}"></script>
 <script src="{{ asset('/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('/dist/js/pages/datatable/datatable-basic.init.js') }}"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
 </body>
 
 </html>

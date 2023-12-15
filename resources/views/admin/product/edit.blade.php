@@ -39,14 +39,42 @@
       <div class="row">
         <div class="col">
           <div class="mb-3 row">
+            <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Slug:</label>
+            <div class="col-lg-9 col-md-6 col-sm-12">
+              <input name="slug" value="{{ $viewData['product']->getSlug() }}" type="text" class="form-control" id="slug" disabled>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3 row">
+            <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Category:</label>
+            <div class="col-lg-9 col-md-6 col-sm-12">
+              <select class="form-control" name="category_id">
+                @foreach($viewData['category'] as $category)
+                  <option value="{{ $category->id }}">{{ $category->name }}</option>
+                @endforeach
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="mb-3 row">
             <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Image:</label>
             <div class="col-lg-10 col-md-6 col-sm-12">
               <input class="form-control" type="file" name="image">
             </div>
           </div>
         </div>
-        <div class="col">
           &nbsp;
+        <div class="col">
+          <div class="mb-3 row">
+            <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">SKU:</label>
+            <div class="col-lg-10 col-md-6 col-sm-12">
+              <input name="kode_product" value="{{ $viewData['product']->getSKU() }}" type="text" class="form-control">
+            </div>
+          </div>
         </div>
       </div>
       <div class="mb-3">
