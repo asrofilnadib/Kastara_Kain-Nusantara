@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use RealRashid\SweetAlert\Facades\Alert;
 class AdminAuthMiddleware
 {
     /**
@@ -20,6 +20,7 @@ class AdminAuthMiddleware
         if (Auth::user() && Auth::user()->getRole() == 'admin') {
             return $next($request);
         } else {
+            Alert::warning('Authentication Problem', 'You are not an Admin, please contact developer.');
             return redirect()->route('home.index');
         }
     }
