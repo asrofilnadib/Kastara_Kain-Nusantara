@@ -11,5 +11,24 @@ The background of our project is influenced by the declining enthusiasm for Indo
 ## Installation Guide
 
 1). Install Composer in your computer
+
 2). Clone Repository on your computer
-3).
+    
+```git clone <name> https://github.com/asrofilnadib/Kastara_Kain-Nusantara.git``` 
+
+3). Run ```php artisan key:generate```
+
+4). Change or duplicate file ```.env.example``` with name ```.env```
+
+4). compile the assets with ```npm i && npm run dev```
+
+5). install composer packages with ```composer install --no-interaction --no-ansi```
+    or update with ```composer update --no-interaction --no-ansi```
+
+5). Run ```php artisan migrate --seed```
+
+6). Link the images ```php artisan storage:link```
+
+7). Run ```php artisan serve```
+
+8). Open http://127.0.0.1:8000
