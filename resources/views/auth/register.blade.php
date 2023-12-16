@@ -1,7 +1,64 @@
 @extends('layouts.apps')
 
 @section('content')
-<div class="container" style="margin: 110px 100px">
+<div class="" style="margin: 0px 0px">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img src="{{ asset('assets-login/img/img-login.svg') }}" alt="">
+                </div>
+
+                <div class="login__forms">
+
+                    <form method="POST" action="{{ route('register') }}" class="login__create block" id="login-up">
+                        @csrf
+                        <h1 class="login__title">Create Account</h1>
+    
+                        <div class="login__box row">
+                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Name">
+                            @error('name')
+                                <strong class="invalid-feedback" role="alert">{{ $message }}</strong>
+                            @enderror
+                        </div>
+    
+                        <div class="login__box row">
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
+                            @error('email')
+                                        <strong class="invalid-feedback" role="alert">{{ $message }}</strong>
+                            @enderror
+                        </div>
+
+                        <div class="login__box row">
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Password">
+                            @error('password')
+                                        <strong class="invalid-feedback" role="alert">{{ $message }}</strong>
+                            @enderror
+                        </div>
+
+                        <div class="login__box row">
+                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
+                            @error('password')
+                                        <strong class="invalid-feedback" role="alert">{{ $message }}</strong>
+                            @enderror
+                        </div>
+
+                        <button type="submit" class="login__button text-decoration-none m-auto d-block w-100">{{ __('Register') }}</button> 
+
+                        <div>
+                            <span class="login__account">Already have an Account ?</span>
+                            <a href="{{ route('login') }}" class="login__signup">Sign In</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="" style="margin: 0px 0px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -73,5 +130,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 @endsection

@@ -112,4 +112,6 @@
 </script>
 <!--===============================================================================================-->
 <script src="/../js/main.js"></script>
+<!-- login assets -->
+<script src="{{ asset('assets-login/js/main.js') }}"></script>
 
