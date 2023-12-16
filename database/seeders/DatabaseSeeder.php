@@ -60,5 +60,65 @@ class DatabaseSeeder extends Seeder
             'image' => 'product-16.jpg',
             'price' => 16,
         ]);
+
+        Product::create([
+            'name' => 'Kain Jumputan',
+            'kode_product' => 'ks-15',
+            'category_id' => 1,
+            'description' => 'Kain Jumputan Palembang adalah salah satu jenis kain tradisional Indonesia yang berasal dari daerah Palembang, Sumatra Selatan. Kain ini memikat hati dengan keindahan dan keunikan motifnya yang khas. Dikenal sebagai "jumputan" karena proses pembuatannya yang melibatkan teknik pengumpulan dan penataan serat kain sebelum proses pewarnaan.
+
+            Motif pada Kain Jumputan Palembang sering kali menggambarkan alam sekitar, simbol-simbol budaya, dan unsur-unsur tradisional yang khas Palembang. Keberagaman warna dan pola pada kain ini menciptakan visual yang menarik dan sarat akan makna. Pewarnaan kain ini sering dilakukan dengan teknik manual, menambah keaslian dan keunikan setiap karya.
+            
+            Proses pembuatan Kain Jumputan Palembang memerlukan keahlian tinggi dari para pengrajin. Dalam tahap jumputan, pengrajin mengumpulkan sejumlah benang kain dengan teknik tertentu untuk menciptakan pola yang diinginkan. Kemudian, proses pewarnaan dilakukan dengan cermat, dan hasilnya adalah kain yang penuh dengan detail dan keanggunan.
+            
+            Kain Jumputan Palembang bukan sekadar pakaian, melainkan warisan budaya yang merefleksikan kekayaan seni dan keindahan tradisional Palembang. Setiap kainnya adalah karya seni yang menggambarkan identitas dan kehidupan masyarakat Palembang, serta menjadi simbol penting dari warisan budaya Indonesia yang perlu dilestarikan.',
+            'image' => 'product-15.jpg',
+            'price' => 11,
+        ]);
+
+        Product::create([
+            'name' => 'Kain Tenun Siak',
+            'kode_product' => 'ks-14',
+            'category_id' => 1,
+            'description' => 'Kain Tenun Siak adalah kain tradisional Indonesia yang berasal dari daerah Siak, Provinsi Riau. Kain ini memancarkan keindahan dan kearifan lokal melalui proses tenun yang cermat dan desain yang khas. Dikenal dengan sebutan "songket" atau "kain tenun emas," Kain Tenun Siak sering kali dihiasi dengan motif-motif geometris yang indah dan detail.
+
+                                Proses pembuatan kain ini melibatkan keterampilan tinggi para pengrajin tenun Siak. Benang emas atau perak digunakan untuk menenun pola-pola yang rumit pada kain, menciptakan efek cahaya dan bayangan yang mengesankan. Motif-motif yang sering digunakan mencerminkan kekayaan budaya dan sejarah Siak, termasuk gambar-gambar alam, hewan-hewan lokal, dan simbol-simbol keagamaan.
+
+                                Kain Tenun Siak bukan hanya sebuah produk tekstil, tetapi juga sebuah warisan budaya yang memancarkan keanggunan dan kemewahan. Kain ini sering digunakan pada acara-acara istimewa, upacara adat, dan perayaan keagamaan. Kualitas kain tenun Siak juga sering diukur dari kehalusan tenunannya dan kemewahan hiasannya, termasuk penggunaan benang emas atau perak yang memberikan kilau khas.
+
+                                Sebagai simbol kemewahan dan keindahan tradisional, Kain Tenun Siak merupakan bagian yang tak terpisahkan dari identitas budaya Riau. Keberlanjutan produksi dan apresiasi terhadap keindahan kain tenun Siak sangat penting untuk memastikan warisan budaya ini tetap hidup dan dihargai oleh generasi mendatang.',
+            'image' => 'product-14.jpg',
+            'price' => 17,
+        ]);
+
+        Product::create([
+            'name' => 'Kain Sulam Karawo',
+            'kode_product' => 'ks-13',
+            'category_id' => 4,
+            'description' => 'Kain Sulam Karawo adalah sebuah karya seni tekstil yang berasal dari Kabupaten Bone, Sulawesi Selatan, Indonesia. Kain ini dikenal dengan keindahan sulaman yang rumit dan teliti, menciptakan karya seni yang anggun dan bernilai tinggi. Proses pembuatannya melibatkan teknik sulam tangan yang membutuhkan keahlian tinggi.
+
+            Motif-motif yang ada pada Kain Sulam Karawo sering kali menggambarkan kehidupan sehari-hari, budaya, dan simbol-simbol tradisional masyarakat Bone. Sulaman yang rumit dan padat menciptakan detail yang memukau, sering kali menampilkan pola geometris yang simetris dan tajam. Benang yang digunakan untuk sulaman ini sering kali berwarna-warni, menambah keindahan dan keceriaan pada kain.
+            
+            Kain Sulam Karawo bukan hanya sebagai pakaian atau kain hias semata, melainkan juga sebagai manifestasi seni rupa tradisional yang mencerminkan identitas dan kebanggaan budaya masyarakat Bone. Setiap kain sulam adalah bukti keterampilan tinggi dan dedikasi pengrajin dalam melestarikan seni sulaman tradisional.
+            
+            Keberlanjutan produksi dan apresiasi terhadap Kain Sulam Karawo sangat penting untuk melindungi dan melestarikan warisan budaya ini. Kain Sulam Karawo, dengan keindahan sulamannya yang unik, menjadi bukti nyata kekayaan seni dan kebudayaan Sulawesi Selatan yang patut dijaga dan diwariskan kepada generasi selanjutnya.',
+            'image' => 'product-13.jpg',
+            'price' => 20,
+        ]);
+
+        Product::create([
+            'name' => 'Kain Tenun Ikat NTT',
+            'kode_product' => 'ks-12',
+            'category_id' => 4,
+            'description' => 'Kain Tenun Ikat NTT (Nusa Tenggara Timur) adalah warisan budaya Indonesia yang menggambarkan keahlian tinggi para pengrajin serta keindahan tradisional dari wilayah NTT. Proses pembuatannya melibatkan teknik ikat benang sebelum proses tenun, menciptakan pola-pola unik dan khas yang menjadi ciri khas dari kain ini.
+
+            Motif-motif pada Kain Tenun Ikat NTT sering kali mencerminkan kehidupan sehari-hari, alam, dan mitologi setempat. Warna-warna yang digunakan biasanya cerah dan kontras, menambah keindahan visual pada kain. Selain itu, teknik ikat benang memberikan sentuhan artistik pada kain, menampilkan corak-coral yang khas.
+            
+            Proses tenun ini sering kali melibatkan komunitas atau kelompok perempuan di desa-desa NTT, menunjukkan bahwa kain tenun memiliki peran sosial dan ekonomi yang penting dalam masyarakat setempat. Kain Tenun Ikat NTT bukan hanya sebagai produk tekstil, melainkan juga sebagai penjaga identitas budaya dan warisan nenek moyang.
+            
+            Kain Tenun Ikat NTT menjadi simbol kekayaan seni dan kebudayaan NTT yang perlu dijaga dan dilestarikan. Setiap kain adalah bukti keterampilan tangan dan ketekunan pengrajin dalam melestarikan tradisi warisan budaya, serta sebagai medium untuk mempertahankan kekayaan dan keindahan warisan nenek moyang bagi generasi mendatang.',
+            'image' => 'product-12.jpg',
+            'price' => 20,
+        ]);
     }
 }
