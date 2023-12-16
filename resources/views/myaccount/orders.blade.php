@@ -48,7 +48,7 @@
     <div class="alert d-flex flex-column justify-content-center align-items-center" role="alert">
       <h2>Kamu belum pernah bertransaksi :(</h2><br>
       <p>Ayo, mulai belanja dan beli berbagai kain favoritmu di Kastara!</p><br>
-      <a href="products"
+      <a href="/products"
         class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 text-center btn-sm m-b-20"
         style="max-width: 200px; min-width: 100px; text-decoration: none;">
         Shop Now
