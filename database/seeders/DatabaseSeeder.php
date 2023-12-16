@@ -120,5 +120,46 @@ class DatabaseSeeder extends Seeder
             'image' => 'product-12.jpg',
             'price' => 20,
         ]);
+
+        Product::create([
+            'name' => 'Kain Tenun Ikat NTT',
+            'kode_product' => 'ks-12',
+            'category_id' => 4,
+            'description' => 'Kain Tenun Ikat NTT (Nusa Tenggara Timur) adalah warisan budaya Indonesia yang menggambarkan keahlian tinggi para pengrajin serta keindahan tradisional dari wilayah NTT. Proses pembuatannya melibatkan teknik ikat benang sebelum proses tenun, menciptakan pola-pola unik dan khas yang menjadi ciri khas dari kain ini.
+
+            Motif-motif pada Kain Tenun Ikat NTT sering kali mencerminkan kehidupan sehari-hari, alam, dan mitologi setempat. Warna-warna yang digunakan biasanya cerah dan kontras, menambah keindahan visual pada kain. Selain itu, teknik ikat benang memberikan sentuhan artistik pada kain, menampilkan corak-coral yang khas.
+            
+            Proses tenun ini sering kali melibatkan komunitas atau kelompok perempuan di desa-desa NTT, menunjukkan bahwa kain tenun memiliki peran sosial dan ekonomi yang penting dalam masyarakat setempat. Kain Tenun Ikat NTT bukan hanya sebagai produk tekstil, melainkan juga sebagai penjaga identitas budaya dan warisan nenek moyang.
+            
+            Kain Tenun Ikat NTT menjadi simbol kekayaan seni dan kebudayaan NTT yang perlu dijaga dan dilestarikan. Setiap kain adalah bukti keterampilan tangan dan ketekunan pengrajin dalam melestarikan tradisi warisan budaya, serta sebagai medium untuk mempertahankan kekayaan dan keindahan warisan nenek moyang bagi generasi mendatang.',
+            'image' => 'product-12.jpg',
+            'price' => 20,
+        ]);
+
+        Product::create([
+            'name' => 'Kain Ulap Doyo',
+            'kode_product' => 'ks-11',
+            'category_id' => 2,
+            'description' => 'Pulau Kalimantan memiliki kekayaan budaya berupa berbagai jenis tekstil tradisional yang menyimpan keunikan dan kekhasan tersendiri. Salah satu produk tekstil tradisional tersebut adalah tenun ulap doyo. Kain tenun ini menjadi semacam identitas bagi Suku Dayak Benuaq yang mendiami sebagian wilayah Kalimantan Timur. Bahan baku, proses pembuatan, dan motif yang spesifik dari tenun ini menjadi warisan budaya tak ternilai dari masyarakat Dayak Benuaq.
+
+            Ulap doyo merupakan jenis tenun ikat berbahan serat daun doyo (Curliglia latifolia). Daun ini berasal dari tanaman sejenis pandan yang berserat kuat dan tumbuh secara liar di pedalaman Kalimantan, salah satunya di wilayah Tanjung Isuy, Jempang, Kutai Barat.',
+            'image' => 'product-11.jpg',
+            'price' => 24,
+        ]);
+
+        Product::create([
+            'name' => 'Kain Gringsing Tenganan',
+            'kode_product' => 'ks-10',
+            'category_id' => 2,
+            'description' => 'Kain Gringsing Tenganan adalah kain tradisional yang berasal dari desa Tenganan, yang terletak di Kabupaten Karangasem, Bali, Indonesia. Kain ini dikenal dengan keunikan pola gringsingnya, yang dirajut secara tradisional dengan menggunakan teknik khas yang telah diwariskan turun temurun.
+
+                            Motif gringsing pada kain ini biasanya terdiri dari pola-pola geometris yang kompleks dan simetris. Proses pembuatannya melibatkan penggunaan benang yang diikat dan diwarnai secara manual sebelum dirajut, menciptakan pola-pola yang sangat terinci dan khas. Keunikan kain Gringsing Tenganan tidak hanya terletak pada desainnya, tetapi juga pada filosofi dan nilai-nilai budaya yang terkandung dalam setiap motif.
+
+                            Pembuatan Kain Gringsing Tenganan merupakan kegiatan kolaboratif di masyarakat Tenganan. Proses ini tidak hanya menjadi cara untuk menghasilkan pakaian dan kain hias, tetapi juga sebagai upaya melestarikan tradisi dan budaya yang telah ada selama berabad-abad.
+
+                            Kain Gringsing Tenganan tidak hanya menjadi lambang keindahan seni tekstil Bali, tetapi juga merupakan bagian integral dari identitas budaya masyarakat Tenganan. Sebagai salah satu warisan budaya yang perlu dilestarikan, kain Gringsing Tenganan mewakili keterampilan tinggi dan keindahan tradisional yang patut dihargai oleh generasi mendatang.',
+            'image' => 'product-11.jpg',
+            'price' => 24,
+        ]);
     }
 }
