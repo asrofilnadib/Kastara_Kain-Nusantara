@@ -8,7 +8,7 @@
 
         <!-- Logo desktop -->
         <a href="/" class="logo">
-          <img src="images/icons/logo-02.png" alt="IMG-LOGO">
+          <img src="images/icons/logo-01.png" alt="IMG-LOGO">
         </a>
 
         <!-- Menu desktop -->
@@ -18,7 +18,7 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/products">Product</a>
+              <a class="nav-link" href="/products">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/about">About</a>
@@ -94,7 +94,7 @@
         <a class="nav-link active" href="/">Home</a>
       </li>
       <li class="nav-item {{ request()->is('products') ? 'active-menu' : '' }}">
-        <a class="nav-link active" href="/products">Product</a>
+        <a class="nav-link active" href="/products">Products</a>
       </li>
       <li class="nav-item {{ request()->is('about') ? 'active-menu' : '' }}">
         <a class="nav-link active" href="/about">About</a>
