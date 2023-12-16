@@ -49,47 +49,16 @@ class DatabaseSeeder extends Seeder
 
 
         Product::create([
-            'name' => 'Sasirangan',
-            'kode_product' => 'ks-01',
-            'category_id' => 2,
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius et facilis fugiat illum ipsam iste, itaque minima nostrum provident, repudiandae vel voluptatum. Ab alias aliquam consectetur corporis cum debitis deserunt dignissimos dolor eius error fuga illum, inventore ipsa itaque minus necessitatibus nisi praesentium quae, quam rem repellat repellendus sequi sit, suscipit tenetur totam ullam!
+            'name' => 'Kain Besurek Bengkulu',
+            'kode_product' => 'ks-16',
+            'category_id' => 1,
+            'description' => 'Kain Besurek Bengkulu adalah salah satu kekayaan budaya Indonesia yang berasal dari Bengkulu. Kain ini mempesona dengan keindahan motif-motifnya yang unik dan beragam, mencerminkan kekayaan alam dan kehidupan sehari-hari masyarakat Bengkulu. Motif-motif tersebut sering menggambarkan elemen-elemen alam, flora-fauna, dan seni tradisional lokal. Warna-warna yang digunakan pada kain Besurek Bengkulu juga mencirikan keceriaan dan kekayaan alam daerah tersebut.
 
-          Accusamus asperiores consequatur consequuntur, doloremque ducimus ea, et ex fugiat fugit hic illum inventore iure magni nesciunt possimus sunt unde voluptas! Delectus deleniti dolore dolores illo ipsum modi nemo officia quia repellat vel! Beatae cumque dolore doloremque dolorum earum eius est exercitationem id inventore ipsa labore laborum magnam officia officiis porro possimus praesentium quam quos ratione repellat saepe sit tempora tempore temporibus ullam unde, veritatis.',
-            'image' => 'product-01.jpg',
+            Proses pembuatan kain Besurek Bengkulu melibatkan keterampilan tinggi pengrajin dalam teknik pewarnaan dan pengaplikasian motif. Setiap langkah produksi, mulai dari pemberian lilin sebagai resist hingga proses pewarnaan manual, dilakukan dengan teliti untuk menciptakan karya seni tekstil yang memukau. Keunikan kain Besurek Bengkulu tidak hanya terletak pada desainnya, tetapi juga pada filosofi dan makna yang terkandung dalam setiap motif.
+            
+            Berkat perpaduan antara keahlian pengrajin, nilai-nilai kultural, dan kekayaan alam Bengkulu, kain Besurek Bengkulu bukan hanya sebuah pakaian, melainkan juga sebuah warisan budaya yang mencerminkan identitas dan keindahan tradisional Bengkulu. Sebagai ekspresi seni tekstil, kain Besurek Bengkulu menjadi lambang kebanggaan masyarakat dan merupakan bagian integral dari warisan budaya Indonesia yang patut dijaga dan dilestarikan.',
+            'image' => 'product-16.jpg',
             'price' => 16,
-        ]);
-
-        Product::create([
-            'name' => 'Batik Yogyakarta',
-            'kode_product' => 'ks-02',
-            'category_id' => 3,
-            "description" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae consectetur corporis debitis eos, quasi reiciendis suscipit tempore temporibus veniam? Accusantium aspernatur beatae blanditiis consectetur cum dolor dolore doloremque ducimus ea enim error est eum excepturi fuga fugiat illo ipsa iste molestias nemo nisi numquam officia optio possimus praesentium quas qui quidem quisquam, quos ratione recusandae rem saepe sed suscipit vel veniam veritatis voluptate. Aliquam aperiam, consequatur dolores illum itaque, laboriosam magnam molestiae numquam officiis provident sapiente sit totam, voluptatibus!",
-            'image' => 'product-02.jpg',
-            'price' => 20,
-        ]);
-
-        Product::create([
-            'name' => 'Batik Parang',
-            'kode_product' => 'ks-03',
-            'category_id' => 3,
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eligendi, id ipsum iusto possimus quasi quibusdam tenetur. Autem consectetur distinctio dolor ea eius enim error excepturi fugiat harum,
-
-                illo, ipsa omnis optio placeat quasi quibusdam totam vel veniam voluptatum. Aperiam atque eos impedit iure laboriosam modi, molestias velit voluptates! Ad asperiores commodi culpa dicta eius, iste nostrum perspiciatis quae! Autem esse fuga,
-
-                id laborum maxime, nemo neque odio pariatur quisquam ratione ullam vero vitae voluptas. Commodi debitis dicta dolorum fugit libero neque praesentium sit, vel. Aperiam earum iure libero quisquam saepe sequi temporibus. Doloremque ea laborum perferendis recusandae suscipit voluptatum.',
-            'image' => 'product-03.jpg',
-            'price' => 15,
-        ]);
-
-        Product::create([
-            'name' => 'Trusmi Batik Village',
-            'kode_product' => 'ks-04',
-            'category_id' => 3,
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eligendi, id ipsum iusto possimus quasi quibusdam tenetur. Autem consectetur distinctio dolor ea eius enim error excepturi fugiat harum,
-
-             id laborum maxime, nemo neque odio pariatur quisquam ratione ullam vero vitae voluptas. Commodi debitis dicta dolorum fugit libero neque praesentium sit, vel. Aperiam earum iure libero quisquam saepe sequi temporibus. Doloremque ea laborum perferendis recusandae suscipit voluptatum.',
-            'image' => 'product-04.jpg',
-            'price' => 18,
         ]);
     }
 }
