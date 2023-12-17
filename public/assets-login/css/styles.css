@@ -68,6 +68,7 @@ img {
 }
 
 .login__img {
+  background-color: #fff;
   justify-self: center;
 }
 
@@ -86,7 +87,7 @@ img {
   position: absolute;
   bottom: 1rem;
   width: 100%;
-  background-color: var(--first-color-lighten);
+  background-color: white;
   padding: 2rem 1rem;
   border-radius: 1rem;
   text-align: center;
@@ -229,7 +230,7 @@ img {
     display: flex;
     width: 600px;
     height: 588px;
-    background-color: var(--first-color-lighten);
+    background-color: white;
     border-radius: 1rem;
     padding-left: 1rem;
   }
