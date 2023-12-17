@@ -47,7 +47,7 @@ class CartController extends Controller
             $request->session()->put('products', $products);
         } else {
             Alert::warning('', 'Please log in to add products to the cart.');
-            return redirect()->route('login')->with('error', 'Please log in to add products to the cart.');
+            return redirect()->route('login');
         }
         Alert::success('', 'Your item is added to cart!');
         return redirect()->route('cart.index');

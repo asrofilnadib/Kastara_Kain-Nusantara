@@ -1,6 +1,6 @@
 @extends('layouts.apps')
-@include('sweetalert::alert')
 @section('content')
+@include('sweetalert::alert')
 
 <div class="" style="margin: 0px 0px">
     <div class="row justify-content-center">

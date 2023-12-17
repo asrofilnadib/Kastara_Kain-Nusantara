@@ -211,7 +211,7 @@
       </div>
 
       <div class="row isotope-grid">
-        @foreach(Product::orderBy('created_at', 'desc')->take(6)->get() as $product )
+        @foreach(Product::orderBy('created_at', 'desc')->take(8)->get() as $product )
         <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
             <!-- Block2 -->
             <div class="block2">
