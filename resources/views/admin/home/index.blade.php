@@ -34,7 +34,7 @@
           <tr class="table_head">
             <th>ID</th>
             <th>Name</th>
-            <th>Position</th>
+            <th>Total</th>
           </tr>
           </thead>
           <tbody>
@@ -48,9 +48,9 @@
           </tbody>
           <tfoot>
           <tr>
+            <th>ID</th>
             <th>Name</th>
-            <th>Position</th>
-            <th>Office</th>
+            <th>Total</th>
           </tr>
           </tfoot>
         </table>

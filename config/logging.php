@@ -94,6 +94,9 @@ return [
             'with' => [
                 'stream' => 'php://stderr',
             ],
+            'formatter with' => [
+                'includeStackTrace' => true,
+            ],
         ],
 
         'syslog' => [

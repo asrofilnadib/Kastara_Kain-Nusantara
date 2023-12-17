@@ -5,7 +5,7 @@
 @section('content')
 
   <!-- Product Detail -->
-  <section class="sec-product-detail bg0 p-t-65 p-b-55">
+  <section class="sec-product-detail bg0 p-t-25 p-b-55">
     <div class="container">
       <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-5 p-b-35 p-lr-0-lg">
         <a href="/" class="stext-109 cl8 hov-cl1 trans-04">
@@ -86,11 +86,6 @@
           <!--  -->
           <div class="flex-w flex-m p-l-100 p-t-40 respon7">
             <div class="flex-m bor9 p-r-10 m-r-11">
-              <a href="#"
-                 class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100"
-                 data-tooltip="Add to Wishlist">
-                <i class="zmdi zmdi-favorite"></i>
-              </a>
             </div>
 
             <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"

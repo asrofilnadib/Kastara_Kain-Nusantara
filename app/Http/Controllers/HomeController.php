@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        $viewData = [];
-        $viewData["title"] = "Home Page - Kastara";
+        $viewData = [
+          'title' => "Home Page - Kastara",
+          'product'=> Product::orderBy('created_at', 'desc')->take(6)->get()
+        ];
         return view('home.index')->with("viewData", $viewData);
     }
 
