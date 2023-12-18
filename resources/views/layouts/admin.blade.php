@@ -79,7 +79,7 @@
         <!-- ============================================================== -->
         <div class="navbar-brand">
           <!-- Logo icon -->
-          <a href="/admin">
+          <a href="/">
 
             <!-- Logo text -->
             <span class="logo-text">
