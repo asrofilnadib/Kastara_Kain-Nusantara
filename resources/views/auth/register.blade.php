@@ -1,7 +1,7 @@
 @extends('layouts.apps')
 
 @section('content')
-<div class="" style="margin: 0px 0px">
+<div class="p-b-60">
     <div class="row justify-content-center">
         <div class="col-md-8">
         <div class="login">
@@ -15,14 +15,14 @@
                     <form method="POST" action="{{ route('register') }}" class="login__create block" id="login-up">
                         @csrf
                         <h1 class="login__title">Create Account</h1>
-    
+
                         <div class="login__box row">
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Name">
                             @error('name')
                                 <strong class="invalid-feedback" role="alert">{{ $message }}</strong>
                             @enderror
                         </div>
-    
+
                         <div class="login__box row">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
                             @error('email')
@@ -44,7 +44,7 @@
                             @enderror
                         </div>
 
-                        <button type="submit" class="login__button text-decoration-none m-auto d-block w-100">{{ __('Register') }}</button> 
+                        <button type="submit" class="login__button text-decoration-none m-auto d-block w-100">{{ __('Register') }}</button>
 
                         <div>
                             <span class="login__account">Already have an Account ?</span>

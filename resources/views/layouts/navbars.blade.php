@@ -77,21 +77,6 @@
          data-notify="{{ session('cartCount', 0) }}">
         <i class="zmdi zmdi-shopping-cart"></i>
       </a>
-
-      @guest
-        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 text-decoration-none"
-           href="{{ route('login') }}">Login</a>
-        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-2 text-decoration-none"
-           href="{{ route('register') }}" role="button">Register</a>
-      @else
-        <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-3 text-decoration-none"
-           href="{{ route('myaccount.orders') }}">My Orders</a>
-        <form id="logout" action="{{ route('logout') }}" method="POST">
-          <a role="button" class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-1"
-             onclick="document.getElementById('logout').submit();">Logout</a>
-          @csrf
-        </form>
-      @endguest
     </div>
 
     <!-- Button show menu -->
@@ -119,6 +104,24 @@
       <li class="nav-item {{ request()->is('contact') ? 'active-menu' : '' }}">
         <a class="nav-link active" href="/contact">Contact</a>
       </li>
+      @guest
+        <li>
+          <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 text-decoration-none"
+             href="{{ route('login') }}">Login</a>
+          <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-2 text-decoration-none"
+             href="{{ route('register') }}">Register</a>
+        </li>
+      @else
+        <li>
+          <a class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-3 text-decoration-none"
+             href="{{ route('myaccount.orders') }}">My Orders</a>
+          <form id="logout" action="{{ route('logout') }}" method="POST">
+            <a role="button" class="icon-header-auth cl2 hov-cl1 trans-04 p-l-22 p-r-11 pl-1"
+               onclick="document.getElementById('logout').submit();">Logout</a>
+            @csrf
+          </form>
+        </li>
+      @endguest
     </ul>
   </div>
 

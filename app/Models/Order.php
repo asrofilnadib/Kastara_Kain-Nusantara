@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Item;
 
 class Order extends Model
 {
+    use HasFactory;
     /**
      * ORDER ATTRIBUTES
      * $this->attributes['id'] - int - contains the order primary key (id)
@@ -26,7 +28,7 @@ class Order extends Model
             "user_id" => "required|exists:users,id",
         ]);
     }
-    
+
     public function getId()
     {
         return $this->attributes['id'];

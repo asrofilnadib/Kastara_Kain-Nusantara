@@ -4,4 +4,5 @@
 /usr/bin/php /var/www/html/artisan route:cache --no-ansi -q
 /usr/bin/php /var/www/html/artisan view:cache --no-ansi -q
 
-# php artisan migrate:refresh --force
+#  php artisan storage:link
+#  php artisan migrate:refresh --force

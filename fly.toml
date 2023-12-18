@@ -50,7 +50,7 @@ console_command = "php /var/www/html/artisan tinker"
 
 [deploy]
 #  strategy = "bluegreen"
-  release_command = "php artisan migrate --force"
+  release_command = "php artisan storage:link && php artisan migrate --force"
 
 [mounts]
   source = "storage_dir"

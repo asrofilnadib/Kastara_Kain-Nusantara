@@ -1,8 +1,8 @@
 @extends('layouts.apps')
-@include('sweetalert::alert')
 @section('content')
+@include('sweetalert::alert')
 
-<div class="" style="margin: 0px 0px">
+<div class="p-b-60">
     <div class="row justify-content-center">
         <div class="col-md-8">
     <div class="login">

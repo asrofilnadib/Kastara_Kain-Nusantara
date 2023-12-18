@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
+  <meta name="dicoding:email" content="asrofilnadibs28@gmail.com">
   <!-- Favicon icon -->
   <link
     rel="icon"
